@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = "styles.css" rel = "stylesheet" type = "text/css"/>
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div id = "container">
+    <input id = "result"/>
+      
+    <div id = "buttons">
+      <button type = "button" id = "C" onclick= "clearDisplay()">C</button>
+      <button type = "button" class = "sign" id = "division" onclick = "appendNumber('/')" >÷
+      </button>
+
+      <button type = "button" id = "seven" onclick = "appendNumber('7')">7</button>
+      <button type = "button" id = "eigth" onclick = "appendNumber('8')">8</button>
+      <button type = "button" id = "nine" onclick = "appendNumber('9')">9</button>
+      <button type = "button" class = "sign" id = "mult" onclick = "appendNumber('*')">×</button>
+
+      <button type = "button" id = "four" onclick = "appendNumber('4')">4</button>
+      <button type = "button" id = "five" onclick = "appendNumber('5')">5</button>
+      <button type = "button" id = "six" onclick = "appendNumber('6')">6</button>
+      <button type = "button" class = "sign" id = "min" onclick = "appendNumber('-')">-</button>
+
+
+      <button type = "button" id = "one" onclick = "appendNumber('1')">1</button>
+      <button type = "button" id = "two" onclick = "appendNumber('2')">2</button>
+      <button type = "button" id = "three" onclick = "appendNumber('3')">3</button>
+      <button type = "button" class = "sign" id = "plus" onclick = "appendNumber('+')">+</button>
+
+      <button type = "button" id = "zero" onclick = "appendNumber('0')">0</button>
+      <button type = "button" id = "decimal" onclick = "appendNumber('.')">.</button>
+      <button type = "button" class = "sign" id = "equal" onclick = "calculate()">=</button>
+    </div>
+  </div>
+  <script src = "index.js"></script>
+
+</body>
+
+
+</html>
